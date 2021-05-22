@@ -270,6 +270,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -294,8 +295,8 @@ header .rightHeader {
 
 header nav {
   position: absolute;
-  top: 2%;
-  left: 2%;
+  top: 0%;
+  left: 0%;
 }
 
 header ul {
@@ -304,11 +305,23 @@ header ul {
   display: flex;
 }
 
+header ul li:first-child {
+  background-color: black;
+}
+
+header ul li:first-child a {
+  color: white;
+}
+
 header ul li {
-  margin-right: 30px;
+  padding: 10px 40px;
 }
 
 header img {
   min-width: 100%;
-  height: auto;
+  min-height: 100%;
+}
+
+header p {
+  margin: 20px 50px 20px 0;
 }
