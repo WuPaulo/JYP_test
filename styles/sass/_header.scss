@@ -1,0 +1,32 @@
+header {
+  position: relative;
+
+  .headerContainer {
+    display: flex;
+  }
+
+  .leftHeader,
+  .rightHeader {
+    margin: 100px auto;
+    width: 50%;
+  }
+
+  nav {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      margin-right: 30px;
+    }
+  }
+
+  img {
+    min-width: 100%;
+    height: auto;
+  }
+}
