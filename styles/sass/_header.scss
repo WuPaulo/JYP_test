@@ -11,6 +11,10 @@ header {
     width: 50%;
   }
 
+  .rightHeader {
+    position: relative;
+  }
+
   nav {
     position: absolute;
     top: 0%;
@@ -39,5 +43,17 @@ header {
 
   p {
     margin: 20px 50px 20px 0;
+  }
+
+  .socialsContainer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -14%;
+    top: 50%;
+
+    a {
+      margin-bottom: 50px;
+    }
   }
 }

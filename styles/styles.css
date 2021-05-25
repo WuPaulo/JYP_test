@@ -271,10 +271,15 @@ html {
 a {
   text-decoration: none;
   color: black;
+  border-bottom: 2px solid transparent;
 }
 
 li {
   list-style: none;
+}
+
+a:hover {
+  border-bottom: 2px solid black;
 }
 
 header {
@@ -291,6 +296,10 @@ header .leftHeader,
 header .rightHeader {
   margin: 100px auto;
   width: 50%;
+}
+
+header .rightHeader {
+  position: relative;
 }
 
 header nav {
@@ -324,4 +333,21 @@ header img {
 
 header p {
   margin: 20px 50px 20px 0;
+}
+
+header .socialsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: -14%;
+  top: 50%;
+}
+
+header .socialsContainer a {
+  margin-bottom: 50px;
 }

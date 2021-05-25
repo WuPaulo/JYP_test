@@ -232,8 +232,13 @@ html {
 a {
   text-decoration: none;
   color: black;
+  border-bottom: 2px solid transparent;
 }
 
 li {
   list-style: none;
+}
+
+a:hover {
+  border-bottom: 2px solid black;
 }
