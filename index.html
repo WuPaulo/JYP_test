@@ -133,11 +133,51 @@
         </div>
       </section>
       <section class="contact">
-        <form></form>
+        <form
+          action="POST"
+          data-netlify="true"
+          data-aos="fade-left"
+          data-aos-duration="1200"
+        >
+          <label for="name" class="sr-only">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <label for="email" class="sr-only">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <label for="messages" class="sr-only">Text area message</label>
+          <textarea
+            name="messages"
+            id="messages"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+            required
+          ></textarea>
+          <div class="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <div class="submitContainer">
+            <button type="submit">Send</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer>
-      <div></div>
+      <div class="footerContainer" wrapper>
+        <p>2021 Paulo Wu</p>
+      </div>
     </footer>
     <script src="./script.js"></script>
   </body>
