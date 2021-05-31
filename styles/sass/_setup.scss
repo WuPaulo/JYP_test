@@ -223,6 +223,10 @@ html {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1280px;
