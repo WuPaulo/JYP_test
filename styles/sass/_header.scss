@@ -28,6 +28,7 @@ header {
 
     li:first-child {
       background-color: black;
+
       a {
         color: white;
       }
@@ -41,11 +42,29 @@ header {
   img {
     min-width: 100%;
     min-height: 100%;
-    box-shadow: -25px 25px 0px -1px #abcfcf;
+    box-shadow: -25px 25px 0px -1px #223351;
   }
 
   p {
     margin: 20px 50px 20px 0;
+  }
+
+  .contactButton {
+    position: absolute;
+    right: -12.3%;
+    bottom: 0;
+    button {
+      padding: 10px 20px;
+      font-size: 0.8rem;
+      background: white;
+      border: 1px solid rgb(224, 224, 226);
+    }
+  }
+
+  .headerLine {
+    height: 200px;
+    border-left: 1px solid black;
+    align-self: center;
   }
 
   .socialsContainer {

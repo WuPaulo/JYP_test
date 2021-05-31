@@ -331,12 +331,33 @@ header ul li {
 header img {
   min-width: 100%;
   min-height: 100%;
-  -webkit-box-shadow: -25px 25px 0px -1px #abcfcf;
-          box-shadow: -25px 25px 0px -1px #abcfcf;
+  -webkit-box-shadow: -25px 25px 0px -1px #223351;
+          box-shadow: -25px 25px 0px -1px #223351;
 }
 
 header p {
   margin: 20px 50px 20px 0;
+}
+
+header .contactButton {
+  position: absolute;
+  right: -12.3%;
+  bottom: 0;
+}
+
+header .contactButton button {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  background: white;
+  border: 1px solid #e0e0e2;
+}
+
+header .headerLine {
+  height: 200px;
+  border-left: 1px solid black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 header .socialsContainer {
@@ -357,12 +378,12 @@ header .socialsContainer a {
 }
 
 .skills {
-  background-color: #abcfcf;
-  color: black;
+  background-color: #223351;
+  color: white;
 }
 
 .skills h2 {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   display: inline-block;
 }
 
