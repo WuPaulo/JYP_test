@@ -349,11 +349,11 @@ header .contactButton button {
   padding: 10px 20px;
   font-size: 0.8rem;
   background: white;
-  border: 1px solid #e0e0e2;
+  border: 1px solid #8f8f8f;
 }
 
 header .headerLine {
-  height: 200px;
+  height: 170px;
   border-left: 1px solid black;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -375,6 +375,28 @@ header .socialsContainer {
 
 header .socialsContainer a {
   margin-bottom: 50px;
+}
+
+.contact {
+  text-align: center;
+  margin: 75px auto;
+}
+
+.contact p {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.contact span {
+  color: #223351;
+  text-transform: uppercase;
+}
+
+.contact button {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  background: white;
+  border: 1px solid #8f8f8f;
 }
 
 .skills {
