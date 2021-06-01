@@ -282,10 +282,6 @@ li {
   list-style: none;
 }
 
-a:hover {
-  border-bottom: 2px solid black;
-}
-
 button {
   padding: 10px 20px;
   font-size: 0.8rem;
@@ -385,6 +381,10 @@ header .socialsContainer {
 
 header .socialsContainer a {
   margin-bottom: 50px;
+}
+
+header a:hover {
+  border-bottom: 2px solid black;
 }
 
 .contact {
