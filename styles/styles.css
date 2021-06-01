@@ -286,6 +286,19 @@ a:hover {
   border-bottom: 2px solid black;
 }
 
+button {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  background: white;
+  border: 1px solid #8f8f8f;
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
 header {
   position: relative;
   margin-bottom: 100px;
@@ -349,13 +362,6 @@ header .contactButton {
   bottom: 0;
 }
 
-header .contactButton button {
-  padding: 10px 20px;
-  font-size: 0.8rem;
-  background: white;
-  border: 1px solid #8f8f8f;
-}
-
 header .headerLine {
   height: 170px;
   border-left: 1px solid black;
@@ -396,11 +402,28 @@ header .socialsContainer a {
   text-transform: uppercase;
 }
 
-.contact button {
-  padding: 10px 20px;
-  font-size: 0.8rem;
-  background: white;
-  border: 1px solid #8f8f8f;
+.work {
+  margin: 100px auto;
+}
+
+.work .workContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px auto;
+}
+
+.work .workImageOne,
+.work .workTextTwo {
+  margin-right: 50px;
+}
+
+.work p {
+  margin: 30px auto;
+}
+
+.work h3 {
+  color: gray;
 }
 
 footer {

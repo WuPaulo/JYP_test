@@ -246,3 +246,16 @@ li {
 a:hover {
   border-bottom: 2px solid black;
 }
+
+button {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  background: white;
+  border: 1px solid rgb(143, 143, 143);
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  border: 1px solid black;
+}

@@ -1,0 +1,19 @@
+.work {
+  margin: 100px auto;
+  .workContainer {
+    display: flex;
+    margin: 50px auto;
+  }
+  .workImageOne,
+  .workTextTwo {
+    margin-right: 50px;
+  }
+
+  p {
+    margin: 30px auto;
+  }
+
+  h3 {
+    color: gray;
+  }
+}
