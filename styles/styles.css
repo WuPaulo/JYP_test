@@ -308,12 +308,12 @@ header .headerContainer {
 
 header .leftHeader {
   width: 50%;
-  margin: 150px auto;
+  margin: 70px auto;
 }
 
 header .rightHeader {
   position: relative;
-  margin: 50px auto;
+  margin: 70px auto;
   width: 50%;
 }
 
@@ -343,7 +343,7 @@ header ul li {
 
 header img {
   min-width: 100%;
-  min-height: 100%;
+  height: auto;
   -webkit-box-shadow: -25px 25px 0px -1px #223351;
           box-shadow: -25px 25px 0px -1px #223351;
 }
@@ -354,7 +354,7 @@ header p {
 
 header .contactButton {
   position: absolute;
-  right: -12.3%;
+  right: 0;
   bottom: 0;
 }
 
@@ -406,16 +406,32 @@ header a:hover {
   margin: 100px auto;
 }
 
+.work h2 {
+  margin: 50px 0;
+}
+
 .work .workContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 50px auto;
+  margin-bottom: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.work .workTextTwo,
+.work .workTextOne {
+  width: 50%;
 }
 
 .work .workImageOne,
-.work .workTextTwo {
-  margin-right: 50px;
+.work .workImageTwo {
+  width: 40%;
+}
+
+.work img {
+  max-width: 100%;
 }
 
 .work p {

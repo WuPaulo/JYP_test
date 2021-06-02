@@ -1,12 +1,25 @@
 .work {
   margin: 100px auto;
+  h2 {
+    margin: 50px 0;
+  }
   .workContainer {
     display: flex;
-    margin: 50px auto;
+    margin-bottom: 100px;
+    justify-content: space-between;
   }
+  .workTextTwo,
+  .workTextOne {
+    width: 50%;
+  }
+
   .workImageOne,
-  .workTextTwo {
-    margin-right: 50px;
+  .workImageTwo {
+    width: 40%;
+  }
+
+  img {
+    max-width: 100%;
   }
 
   p {
