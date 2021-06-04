@@ -1,5 +1,4 @@
 html {
-  line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -266,6 +265,13 @@ body {
   overflow-x: hidden;
 }
 
+h1,
+h2,
+h3,
+a {
+  color: #223351;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1280px;
@@ -274,8 +280,6 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
-  border-bottom: 2px solid transparent;
 }
 
 li {
@@ -285,25 +289,66 @@ li {
 button {
   padding: 10px 20px;
   font-size: 0.8rem;
-  background: white;
   border: 1px solid #8f8f8f;
+  background: none;
+  position: relative;
+  cursor: pointer;
+}
+
+li a {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+}
+
+button:after,
+li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #223351), color-stop(50%, transparent));
+  background: linear-gradient(90deg, #223351 50%, transparent 50%);
+  z-index: -1;
+}
+
+button,
+button:after,
+li a,
+li a:after {
+  background-size: 300%;
+  background-position: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 button:hover,
-button:focus {
+button:focus,
+button:focus:after,
+button:hover:after,
+li a:hover,
+li a:focus,
+li a:focus:after,
+li a:hover:after {
+  background-position: 0;
   cursor: pointer;
-  border: 1px solid black;
+  color: white;
 }
 
 header {
+  margin-top: 20px;
   position: relative;
-  margin-bottom: 100px;
+  height: 100vh;
 }
 
 header .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 50px auto;
 }
 
 header .leftHeader {
@@ -317,20 +362,16 @@ header .rightHeader {
   width: 50%;
 }
 
-header nav {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-}
-
 header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 header ul li:first-child {
-  background-color: black;
+  background-color: #223351;
 }
 
 header ul li:first-child a {
@@ -338,14 +379,13 @@ header ul li:first-child a {
 }
 
 header ul li {
-  padding: 10px 40px;
+  padding: 10px 20px;
 }
 
 header img {
   min-width: 100%;
   height: auto;
-  -webkit-box-shadow: -25px 25px 0px -1px #223351;
-          box-shadow: -25px 25px 0px -1px #223351;
+  border-radius: 50%;
 }
 
 header p {
@@ -383,7 +423,7 @@ header .socialsContainer a {
   margin-bottom: 50px;
 }
 
-header a:hover {
+header .socialsContainer a:hover {
   border-bottom: 2px solid black;
 }
 
@@ -403,7 +443,7 @@ header a:hover {
 }
 
 .work {
-  margin: 100px auto;
+  margin: 80px auto;
 }
 
 .work h2 {
@@ -468,6 +508,11 @@ footer .socialsContainer a {
 .skills h2 {
   border-bottom: 2px solid white;
   display: inline-block;
+  color: white;
+}
+
+.skills h3 {
+  color: white;
 }
 
 .skills .skillsTitle {

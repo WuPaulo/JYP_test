@@ -1,9 +1,11 @@
 header {
+  margin-top: 20px;
   position: relative;
-  margin-bottom: 100px;
+  height: 100vh;
 
   .headerContainer {
     display: flex;
+    margin: 50px auto;
   }
 
   .leftHeader {
@@ -17,17 +19,13 @@ header {
     width: 50%;
   }
 
-  nav {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-  }
-
   ul {
     display: flex;
+    font-weight: 600;
+    font-size: 1.2rem;
 
     li:first-child {
-      background-color: black;
+      background-color: #223351;
 
       a {
         color: white;
@@ -35,14 +33,14 @@ header {
     }
 
     li {
-      padding: 10px 40px;
+      padding: 10px 20px;
     }
   }
 
   img {
     min-width: 100%;
     height: auto;
-    box-shadow: -25px 25px 0px -1px #223351;
+    border-radius: 50%;
   }
 
   p {
@@ -71,9 +69,8 @@ header {
     a {
       margin-bottom: 50px;
     }
-  }
-
-  a:hover {
-    border-bottom: 2px solid black;
+    a:hover {
+      border-bottom: 2px solid black;
+    }
   }
 }
