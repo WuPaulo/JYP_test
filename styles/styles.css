@@ -289,7 +289,7 @@ li {
 button {
   padding: 10px 20px;
   font-size: 0.8rem;
-  border: 1px solid #8f8f8f;
+  border: 1px solid #223351;
   background: none;
   position: relative;
   cursor: pointer;
@@ -442,7 +442,7 @@ header button {
 }
 
 .work {
-  margin: 80px auto;
+  margin: 100px auto;
 }
 
 .work h2 {
@@ -463,12 +463,12 @@ header button {
 
 .work .workTextTwo,
 .work .workTextOne {
-  width: 50%;
+  width: 45%;
 }
 
 .work .workImageOne,
 .work .workImageTwo {
-  width: 40%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,7 +481,7 @@ header button {
 }
 
 .work img {
-  max-width: 90%;
+  max-width: 100%;
 }
 
 .work p {
@@ -564,15 +564,18 @@ footer .socialsContainer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  header .socialsContainer a {
-    margin-right: 40px;
+  header p {
+    margin: 20px 0 20px 0;
+  }
+  header ul li {
+    padding: 10px 15px;
   }
   header .headerLine {
     display: none;
@@ -590,5 +593,31 @@ footer .socialsContainer a:hover {
   }
   header .rightHeader {
     margin: 0px auto;
+  }
+  .contact p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 85%;
+  }
+  header ul li {
+    padding: 5px 20px;
+    font-size: 1rem;
+  }
+  li a {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    padding: 5px 5px;
+  }
+  .skills ul {
+    text-align: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 50px 20px;
+    padding: 50px 0 50px 0;
   }
 }
