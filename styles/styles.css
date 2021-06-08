@@ -392,12 +392,6 @@ header p {
   margin: 20px 50px 20px 0;
 }
 
-header .contactButton {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
 header .headerLine {
   height: 170px;
   border-left: 1px solid black;
@@ -421,10 +415,15 @@ header .socialsContainer {
 
 header .socialsContainer a {
   margin-bottom: 50px;
+  border-bottom: 2px solid transparent;
 }
 
 header .socialsContainer a:hover {
   border-bottom: 2px solid black;
+}
+
+header button {
+  margin-top: 30px;
 }
 
 .contact {
@@ -458,6 +457,8 @@ header .socialsContainer a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: 2px dotted #223351;
+  padding: 20px;
 }
 
 .work .workTextTwo,
@@ -468,10 +469,19 @@ header .socialsContainer a:hover {
 .work .workImageOne,
 .work .workImageTwo {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .work img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .work p {
@@ -498,6 +508,11 @@ footer .footerContainer {
 
 footer .socialsContainer a {
   margin-right: 30px;
+  border-bottom: 2px solid transparent;
+}
+
+footer .socialsContainer a:hover {
+  border-bottom: 2px solid black;
 }
 
 .skills {
