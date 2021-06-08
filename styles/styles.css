@@ -607,6 +607,9 @@ footer .socialsContainer a:hover {
     padding: 5px 20px;
     font-size: 1rem;
   }
+  header .rightHeader {
+    width: initial;
+  }
   li a {
     position: relative;
     cursor: pointer;
@@ -617,7 +620,57 @@ footer .socialsContainer a:hover {
     text-align: center;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-gap: 50px 20px;
-    padding: 50px 0 50px 0;
+    padding: 30px 0 30px 0;
+  }
+  .skills .skillsTitle {
+    padding: 10px 0 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  header .headerContainer {
+    margin-top: 0px;
+  }
+  header nav {
+    display: none;
+  }
+  header button {
+    margin-top: 0px;
+  }
+  header p {
+    font-size: 0.8rem;
+  }
+  header .rightHeader {
+    margin-top: 40px;
+  }
+  button {
+    padding: 5px 10px;
+  }
+  .work {
+    margin: 0 auto;
+  }
+  .work h2 {
+    margin-top: 0;
+  }
+  .work .workContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .work .workImageOne,
+  .work .workImageTwo,
+  .work .workTextTwo,
+  .work .workTextOne {
+    width: 100%;
+  }
+  .work .workImageOne,
+  .work .workImageTwo {
+    margin: 20px auto;
+  }
+  .skills ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
