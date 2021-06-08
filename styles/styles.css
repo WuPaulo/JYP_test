@@ -362,7 +362,7 @@ header .rightHeader {
   width: 50%;
 }
 
-header ul {
+header .navBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,16 +370,95 @@ header ul {
   font-size: 1.2rem;
 }
 
-header ul li:first-child {
+header .navBar ul li:first-child {
   background-color: #223351;
 }
 
-header ul li:first-child a {
+header .navBar ul li:first-child a {
   color: white;
 }
 
-header ul li {
+header .navBar ul li {
   padding: 10px 20px;
+}
+
+header .mobile {
+  -webkit-transition: background 350ms ease-in;
+  transition: background 350ms ease-in;
+  position: fixed;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: #000000bf;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .menuButton {
+  position: absolute;
+  right: 2%;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+header .menuBurger {
+  width: 50px;
+  height: 6px;
+  background: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  z-index: 3;
+  position: fixed;
+}
+
+header .menuBurger::before,
+header .menuBurger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: black;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+header .menuBurger::before {
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
+}
+
+header .menuBurger::after {
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+}
+
+header .menuButton.open .menuBurger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+}
+
+header .menuButton.open .menuBurger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+header .menuButton.open .menuBurger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
 }
 
 header img {
@@ -631,7 +710,7 @@ footer .socialsContainer a:hover {
   header .headerContainer {
     margin-top: 0px;
   }
-  header nav {
+  header .navBar {
     display: none;
   }
   header button {

@@ -19,22 +19,88 @@ header {
     width: 50%;
   }
 
-  ul {
-    display: flex;
-    font-weight: 600;
-    font-size: 1.2rem;
+  .navBar {
+    ul {
+      display: flex;
+      font-weight: 600;
+      font-size: 1.2rem;
 
-    li:first-child {
-      background-color: #223351;
+      li:first-child {
+        background-color: #223351;
 
-      a {
-        color: white;
+        a {
+          color: white;
+        }
+      }
+
+      li {
+        padding: 10px 20px;
       }
     }
+  }
 
-    li {
-      padding: 10px 20px;
-    }
+  .mobile {
+    transition: background 350ms ease-in;
+    position: fixed;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: #000000bf;
+    transition: 0.5s;
+  }
+
+  .menuButton {
+    position: absolute;
+    right: 2%;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .menuBurger {
+    width: 50px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    border: none;
+    z-index: 3;
+    position: fixed;
+  }
+
+  .menuBurger::before,
+  .menuBurger::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menuBurger::before {
+    transform: translateY(-16px);
+  }
+
+  .menuBurger::after {
+    transform: translateY(16px);
+  }
+
+  .menuButton.open .menuBurger {
+    transform: translateX(-50px);
+    background: transparent;
+  }
+
+  .menuButton.open .menuBurger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .menuButton.open .menuBurger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
   }
 
   img {
