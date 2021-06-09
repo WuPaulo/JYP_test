@@ -462,6 +462,7 @@ header .menuButton {
   cursor: pointer;
   z-index: 100;
   background-color: #223351;
+  border-bottom: 1px solid white;
 }
 
 header .menuButtonContainer {
