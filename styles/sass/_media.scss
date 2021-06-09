@@ -75,14 +75,21 @@
   }
 }
 
+@media (min-width: 576px) {
+  .mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   header {
-    .headerContainer {
-      margin-top: 0px;
-    }
-
+    margin-top: 80px;
     .navBar {
       display: none;
+    }
+
+    .menuButtonContainer {
+      display: block;
     }
 
     button {

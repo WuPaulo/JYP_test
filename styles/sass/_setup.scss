@@ -1,6 +1,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 article,
@@ -263,8 +264,7 @@ li a {
   padding: 10px 20px;
 }
 
-button:after,
-li a:after {
+button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -276,9 +276,7 @@ li a:after {
 }
 
 button,
-button:after,
-li a,
-li a:after {
+button:after {
   background-size: 300%;
   background-position: 100%;
   transition: 1s;
@@ -287,11 +285,7 @@ li a:after {
 button:hover,
 button:focus,
 button:focus:after,
-button:hover:after,
-li a:hover,
-li a:focus,
-li a:focus:after,
-li a:hover:after {
+button:hover:after {
   background-position: 0;
   cursor: pointer;
   color: white;

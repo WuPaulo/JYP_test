@@ -33,6 +33,33 @@ header {
         }
       }
 
+      li a:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(90deg, #223351 50%, transparent 50%);
+        z-index: -1;
+      }
+
+      li a,
+      li a:after {
+        background-size: 300%;
+        background-position: 100%;
+        transition: 1s;
+      }
+
+      li a:hover,
+      li a:focus,
+      li a:focus:after,
+      li a:hover:after {
+        background-position: 0;
+        cursor: pointer;
+        color: white;
+      }
+
       li {
         padding: 10px 20px;
       }
@@ -42,30 +69,58 @@ header {
   .mobile {
     transition: background 350ms ease-in;
     position: fixed;
-    left: 100%;
-    width: 100%;
-    min-height: 100vh;
-    background: #000000bf;
+    top: -100%;
     transition: 0.5s;
+    height: 100vh;
+    width: 100%;
+    background: rgba(34, 51, 81, 0.8);
+    z-index: 98;
+    text-align: center;
+
+    ul {
+      transform: translatey(20%);
+      li {
+        font-size: 2rem;
+        padding: 30px 0;
+        a {
+          color: white;
+          font-weight: 600;
+        }
+      }
+
+      li:hover {
+        background: rgb(255, 255, 255);
+
+        a {
+          color: black;
+        }
+      }
+    }
   }
 
   .menuButton {
-    position: absolute;
-    right: 2%;
-    top: 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 100%;
+    height: 50px;
     cursor: pointer;
     z-index: 100;
+    background-color: #223351;
+  }
+
+  .menuButtonContainer {
+    display: none;
   }
 
   .menuBurger {
-    width: 50px;
-    height: 6px;
-    background: rgb(0, 0, 0);
+    width: 40px;
+    height: 5px;
+    background: white;
     transition: all 0.5s ease-in-out;
     border: none;
     z-index: 3;
@@ -76,18 +131,18 @@ header {
   .menuBurger::after {
     content: "";
     position: absolute;
-    width: 50px;
-    height: 6px;
-    background: rgb(0, 0, 0);
+    width: 40px;
+    height: 5px;
+    background: white;
     transition: all 0.5s ease-in-out;
   }
 
   .menuBurger::before {
-    transform: translateY(-16px);
+    transform: translateY(-12px);
   }
 
   .menuBurger::after {
-    transform: translateY(16px);
+    transform: translateY(12px);
   }
 
   .menuButton.open .menuBurger {
@@ -101,6 +156,10 @@ header {
 
   .menuButton.open .menuBurger::after {
     transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .mobile.active {
+    top: 0;
   }
 
   img {
